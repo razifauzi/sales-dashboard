@@ -2,3 +2,69 @@
 * custom.css
 * Can include custom css for your dashboard and form here
 ******************************************************************************/
+
+.table-responsive {
+    overflow-x: auto;
+  }
+
+  .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    color: #333;
+    border-collapse: collapse;
+    border-radius: 10px;
+  }
+
+  .table thead th {
+    font-weight: 700;
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    border-radius: 10px;
+  }
+
+  .table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+  .table-hover tbody tr:hover {
+    background-color: #e6f7ff;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 575.98px) {
+    .table thead {
+      display: none;
+    }
+
+    .table tbody td {
+      display: block;
+      text-align: right;
+      font-size: 14px;
+      font-weight: 700;
+      border-top: none;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      background-color: #f8f9fa;
+    }
+
+    .table tbody td:before {
+      content: attr(data-label);
+      display: inline-block;
+      font-weight: 400;
+      margin-right: 0.5rem;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+    }
+  }
